@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Setting_properties_in_markup"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Установка свойств в разметке" Height="280" Width="525">
+
+    <StackPanel>
+        <!--Установка значения свойства Fill через атрибут-->
+        <Rectangle Fill="Green" Width="100" Height="100">
+        </Rectangle>
+        <!--Установка значения свойства Fill через вложенный элемент-->
+        <Rectangle Width="100" Height="100" Margin="10">
+            <Rectangle.Fill>
+                <LinearGradientBrush>
+                    <GradientStop Color="Chocolate" Offset="0"></GradientStop>
+                    <GradientStop Color="BlueViolet" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+    </StackPanel>
 </Window>
