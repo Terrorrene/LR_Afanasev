@@ -1,0 +1,17 @@
+﻿<Window x:Class="Zoom_task.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zoom_task"
+        mc:Ignorable="d"
+        Title="Масштабирование окна" Height="300" Width="500">
+    <Grid>
+        <Viewbox >
+            <Canvas Width="500" Height="300">
+                <TextBlock Height="50" Background="Blue" Width="100" Canvas.Left="100" Canvas.Top="50"></TextBlock>
+                <TextBlock Height="50" Background="RosyBrown" Width="100" Canvas.Left="150" Canvas.Top="75"/>
+            </Canvas>
+        </Viewbox>
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="Number_work.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Number_work"
+        mc:Ignorable="d"
+        Title="Работа с контейнерами" Height="180.244" Width="500">
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <DockPanel DockPanel.Dock="Top" Background="LightBlue">
+                <Label>Введите двузначное число:</Label>
+                <TextBox Width="150" Name="chis" HorizontalAlignment="Left" KeyDown="Chis_KeyDown"></TextBox>
+                <Button Width="150" Click="Button_Click">Выполнить задания</Button>
+            </DockPanel>
+
+            <DockPanel DockPanel.Dock="Top" Background="Aquamarine">
+                <Label Name="kr3"></Label>
+            </DockPanel>
+            <DockPanel DockPanel.Dock="Top" Background="Khaki">
+                <Label Name="chet"></Label>
+            </DockPanel>
+            <DockPanel DockPanel.Dock="Top" Background="Gray">
+                <Label Name="sum"></Label>
+            </DockPanel>
+            <DockPanel DockPanel.Dock="Top" Background="Aqua">
+                <Label Name="pr"></Label>
+            </DockPanel>
+        </DockPanel>
+    </Grid>
+</Window>

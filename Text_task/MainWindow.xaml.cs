@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Grid
+namespace Text_task
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -23,6 +23,11 @@ namespace Grid
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            text.Text = "";
         }
     }
 }

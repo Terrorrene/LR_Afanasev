@@ -1,0 +1,31 @@
+﻿<Window x:Class="Text_task.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Text_task"
+        mc:Ignorable="d"
+        Title="Масштабирование с меню" Height="450" Width="512.439">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <GridSplitter></GridSplitter>
+        <Viewbox>
+            <Grid>
+                <StackPanel Grid.Row="0" Orientation="Horizontal">
+                    <Label>Элемент меню 1</Label>
+                    <Label>Элемент меню 2</Label>
+                    <Label>Элемент меню 3</Label>
+                    <Label>Элемент меню 4</Label>
+                    <Label>Элемент меню 5</Label>
+                </StackPanel>
+                <Canvas>
+                    <TextBox Grid.Row="1" Name="text" Canvas.Left="86" Canvas.Top="179" Width="200"></TextBox>
+                    <Button Content="Очистить содержимое" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="128" Click="Button_Click" Canvas.Left="314" Canvas.Top="178"/>
+                </Canvas>
+            </Grid>
+        </Viewbox>
+    </Grid>
+</Window>

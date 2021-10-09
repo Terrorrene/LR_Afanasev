@@ -16,4 +16,5 @@ Width="525">
         <TextBlock DockPanel.Dock="Right" Background="LightCyan" Padding="10">DockPanel.Dock="Right"</TextBlock>
         <TextBlock DockPanel.Dock="Left" Background="LightCoral" Padding="10">DockPanel.Dock="Left"</TextBlock>
     </DockPanel>
-</Window>
+</Window>
+
